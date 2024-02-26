@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>javascript test </title>
+    <link rel="stylesheet" href="style.css">
+
+</head>
+<body>
+    <div  class="hello">
+      <h1     class=" h1"></h1><br>
+      <h1 class=" h2"></h1></div>
+      <h1 class=" h3"></h1></div>
+      <h1 class="x"></h1>
+      <h1 class="y"></h1>
+     </div>
+ 
+      
+      
+    
+</body>
+<script>
+    document.onclick = (e) => {
+    let day = new Date();
+    let  hour =  day.getHours();
+    let  mint = day.getMinutes();
+    let  sec = day.getSeconds();
+    let h1 = document.querySelector(".h1");
+    let h2 = document.querySelector(".h2");
+    let h3 = document.querySelector(".h3");
+      
+         h1.textContent=  hour ;
+         h2.textContent=  mint ;
+         h3.textContent=  sec ;
+           
+      
+        let  xcor = document.querySelector(".x").textContent= e.x + "px";
+        let  ycor = document.querySelector(".y").textContent= e.y +  "px"
+    }
+</script>
+</html>
